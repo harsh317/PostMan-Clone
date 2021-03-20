@@ -1,2 +1,2 @@
 # PostMan-Clone
-While Building applications, its very difficult to get response from your site again and again by entering information  again and again. A simple JavaScript-PostMan-clone can help..
+![postmanclone](https://user-images.githubusercontent.com/66161239/111860701-45c75a80-896f-11eb-81ca-b1bb689f0c6d.gif)
