@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <p class="navbar-brand" href="#">PostMan Clone</p>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h1 class="my-3 heading">PostMan Clone</h1>
+    </div>
+
+    <div class="container">
+        <div class="form-group">
+            <label>Your Url</label>
+            <input type="text" class="form-control" id="urlentered" aria-describedby="UrlHelp" placeholder="Enter Your URL">
+            <small id="UrlHelp" class="form-text text-muted">We'll Try to Help You.</small>
+        </div>
+        <h5 style="margin-top: 20px;">Request Type</h5>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="get" value="GET" checked>
+            <label class="form-check-label" for="flexRadioDefault1">
+              Get Request
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="post" value="POST">
+            <label class="form-check-label" for="flexRadioDefault2">
+              Post Request
+            </label>
+        </div>
+        <h5 style="margin-top: 20px;">Content Type</h5>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="cusparams" value="Custom" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Custom parameters
+            </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="jsonparams" value="Json">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Json
+            </label>
+        </div>
+
+        <div id="Customparadiv" style="margin-top: 15px;margin-bottom: 15px">
+            <small>Custom parameters</small>
+            <div class="form-row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="Paramerterkey1" placeholder="Enter Key Value">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="ParameterValue1" placeholder="Enter Pair Value">
+                </div>
+                <button id="plusbtn" class="btn btn-primary">+</button>
+            </div>
+            <div id="extraparams">
+
+            </div>
+        </div>
+
+
+        <div class="my-3" id="Jsondiv">
+            <div class="form-group my-3" id="Jsonrequestdiv">
+                <small>Enter Json Request</small>
+                <textarea class="form-control" id="requestJsonTextbox" rows="3"></textarea>
+            </div>
+        </div>
+        <button class="btn btn-primary" id="Submit">Submit</button>
+        <div class="form-group my-3" id="responsediv">
+            <small>Response</small>
+            <textarea class="form-control resultbox" id="responseTextbox" rows="9">Your Response will appear Here</textarea>
+            <div class="btn">
+                <button id="copytextbtn" class="btn btn-primary btn-lg btn-lg" data-toggle="tooltip" title="Copy to Clipboard">Copy to clipboard</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
